@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #99CCFF;
+	color: #333;
+	font-family: Arial, "Helvetica Neue","Helvetica", Helvetica, sans-serif; 
+	font-weight: normal;
+	font-style: normal;
+	position: relative;
+	cursor: default;
+	min-height: 600px;
+}
+
+
+label {
+	float:left;
+	width: 125px;
+}
+
+h1 {
+	color: #0085D5;
+	font-size:24px; 
+	font-weight: normal;
+	font-style: normal;
+}
+
+h3, .h3 {
+	font-size:16px; 
+	font-weight: normal;
+	font-style: normal;
+}
+
+input[type=text] {
+	width: 500px;
+	border: 1px solid #CCC;
+	padding: 4px;
+	height: 22px;
+}
+
+.main {
+	width: 740px;
+	background: #fcfcfc;
+	margin: auto;
+	padding: 20px;
+}
+.content {
+	background: #fff;
+	padding: 0 10px 0 10px;
+}
+
+.row {
+	padding: 10px 0 5px 20px;
+	display: block;
+	clear: both;
+}
+
+input[type=text].error {
+	border: 1px solid #CC3333;
+	background: #FF9F9F;
+	padding: 4px;
+	height: 22px;
+}
+
+div div.error {
+	margin-left: 125px;
+	color: red !important;
+	
+}
+.textfieldRequiredState .textfieldRequiredMsg, 
+.textfieldInvalidFormatState .textfieldInvalidFormatMsg, 
+.textfieldMinValueState .textfieldMinValueMsg,
+.textfieldMaxValueState .textfieldMaxValueMsg,
+.textfieldMinCharsState .textfieldMinCharsMsg,
+.textfieldMaxCharsState .textfieldMaxCharsMsg
+{
+	display: inline;
+	color: #333333;
+	border: 1px solid #CC3333;
+	font-size: 75%;
+}
+
+
+
+/* The next three group selectors control the way the core element (INPUT) looks like when the widget is in one of the states: * focus, required / invalid / minValue / maxValue / minChars / maxChars , valid 
+ * There are two selectors for each state, to cover the two main usecases for the widget:
+ * - the widget id is placed on the top level container for the INPUT
+ * - the widget id is placed on the INPUT element itself (there are no error messages)
+ */
+ 
+ /* When the widget is in the valid state the INPUT has a green background applied on it. */
+.textfieldValidState input, input.textfieldValidState {
+	background-color: #B8F5B1;
+}
+
+/* When the widget is in an invalid state the INPUT has a red background applied on it. */
+input.textfieldRequiredState, .textfieldRequiredState input, 
+input.textfieldInvalidFormatState, .textfieldInvalidFormatState input, 
+input.textfieldMinValueState, .textfieldMinValueState input, 
+input.textfieldMaxValueState, .textfieldMaxValueState input, 
+input.textfieldMinCharsState, .textfieldMinCharsState input, 
+input.textfieldMaxCharsState, .textfieldMaxCharsState input {
+	background-color: #FF9F9F;
+}
+
+/* When the widget has received focus, the INPUT has a yellow background applied on it. */
+.textfieldFocusState input, input.textfieldFocusState {
+	background-color: #FFFFCC;
+}
+
+/* This class applies only for a short period of time and changes the way the text in the textbox looks like.
+ * It applies only when the widget has character masking enabled and the user tries to type in an invalid character.
+ */
+.textfieldFlashText input, input.textfieldFlashText {
+	color: red !important;
+}
+
+/* When the widget has the hint message on, the hint text can be styled differently than the user typed text. */
+.textfieldHintState input, input.textfieldHintState {
+	/*color: red !important;*/
+}
