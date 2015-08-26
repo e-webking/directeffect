@@ -24,7 +24,7 @@ $(function() {
 	$params['rules'][$email] = {"required": true, "email": true};
 	
 	$params['messages'][$name] = {"required": "Name is required"};
-	$params['messages'][$institute] = {"required": "Institute is required"};
+	$params['messages'][$institute] = {"required": "Institution is required"};
 	$params['messages'][$telephone] = {"required": "Phone number is required"};
 	$params['messages'][$email] = {"required": "Email is required", "email": "Please enter a valid email"};
 	$params['errorElement'] = "div";
