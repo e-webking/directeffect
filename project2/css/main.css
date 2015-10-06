@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #99CCFF;
+	color: #444;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	position: relative;
+	cursor: default;
+	min-height: 600px;
+}
+
+h1 {
+	color: #0085D5;
+	font-size:24px; 
+	font-weight: normal;
+	font-style: normal;
+}
+
+h3, .h3 {
+	color: #00b0f0;
+	font-size:16px; 
+	font-weight: bold;
+	font-style: normal;
+}
+
+a {color: #000; text-decoration: none}
+a:hover {color: #00b0f0; text-decoration: underline}
+.main {
+	width: 940px;
+	background: #fcfcfc;
+	margin: auto;
+	padding: 20px;
+}
+.content {
+	display: block;
+	background: #fff;
+	padding: 0 10px 0 10px;
+	height: auto;
+}
+
+.leftCol {
+	width: 75%;
+	float: left;
+	padding: 10px
+}
+.rightCol {
+	width: 20%;
+	float: left;
+	padding: 10px 10px 0 0;
+}
+.rightCol a {color: #00b0f0; text-decoration: underline}
+.rightCol a:hover { text-decoration: none}
+.rightCol div {
+	
+	margin: 10px 0 40px 0;	
+}
+
+.gray {
+	font-family: 'Oswald', 'Archivo Narrow', 'Arial Narrow', Impact, Helvetica;
+	color: #000;
+	background: #e2ebee;
+	font-size:14px; 
+	text-transform: uppercase;
+	padding: 4px 15px;
+	display: inline;
+}
+.yellow {
+	color: #ff0;
+}
+.center {
+	color: #000;
+	text-align: center;
+}
+.caption {
+	float: left;
+	width: 28%;
+	padding: 20px 0 0 10px; 
+}
+.moreq {
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	background: #5b9bd5;
+	border: 2px solid #41719c;
+	border-radius: 10px;
+	padding: 20px 0;
+}
+
+
+.clear {clear: both}
