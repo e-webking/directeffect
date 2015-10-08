@@ -32,6 +32,17 @@ h3, .h3 {
 	font-style: normal;
 }
 
+footer {
+	width: 940px;
+	background: #E2EBEE;
+	font-family: "Tungsten A","Tungsten B","Tungsten","Oswald", "Helvetica",sans-serif;
+	font-weight: 400;
+	font-size: 1.3333em;
+	text-transform: uppercase;
+	margin: auto;
+	padding: 20px;
+}
+
 a {color: #000; text-decoration: none}
 a:hover {color: #00b0f0; text-decoration: underline}
 .main {
@@ -55,7 +66,9 @@ a:hover {color: #00b0f0; text-decoration: underline}
 .rightCol {
 	width: 20%;
 	float: left;
-	padding: 10px 10px 0 0;
+	padding: 10px 10px 0 10px;
+	background: #F6F6F6;
+	height: 100%;
 }
 .rightCol a {color: #00b0f0; text-decoration: underline}
 .rightCol a:hover { text-decoration: none}
@@ -65,10 +78,11 @@ a:hover {color: #00b0f0; text-decoration: underline}
 }
 
 .gray {
-	font-family: 'Oswald', 'Archivo Narrow', 'Arial Narrow', Impact, Helvetica;
+	font-family: "Tungsten Narrow A", "Tungsten Narrow B", "Tungsten Narrow", "Oswald", "Helvetica", sans-serif;
+	font-weight: 400;
 	color: #000;
 	background: #e2ebee;
-	font-size:14px; 
+	font-size:1.33333em; 
 	text-transform: uppercase;
 	padding: 4px 15px;
 	display: inline;
@@ -98,5 +112,26 @@ a:hover {color: #00b0f0; text-decoration: underline}
 	padding: 20px 0;
 }
 
+.footer {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.footer li { 
+	display: inline-block;
+	padding: 10px 15px 10px 0;
+}
 
+.footer a {
+	color: #0F8EF0;
+	text-decoration: none;
+}
+
+.footer li:first-child a {
+	color: #222;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #000;
+}
 .clear {clear: both}
